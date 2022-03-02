@@ -1,7 +1,4 @@
-require_relative './user'
-
 class Student < User
-
     attr_reader :knowledge
 
     def initialize
@@ -10,9 +7,5 @@ class Student < User
 
     def learn(str)
         @knowledge << str
-    end
-
-    def knowledge
-        @knowledge
     end
 end
